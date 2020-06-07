@@ -14,10 +14,10 @@ spec:
         - --keygen-exit-on-complete
         - --keygen-num-to-gen
         - "100"
-        image: gcr.io/kuar-demo/kuard-amd64:1     
+        image: gcr.io/kuar-demo/kuard-amd64:1
         name: oneshot
         ports:
         - containerPort: 8080
           name: http
           protocol: TCP
-      restartPolicy: OnFailure      
+      restartPolicy: OnFailure
