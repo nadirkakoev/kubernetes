@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+k create  -f  db-pvc.yaml
+k create  -f  db-pv.yaml
+k create -f task-mysql.yaml
+k create -f task_wordpress.yaml

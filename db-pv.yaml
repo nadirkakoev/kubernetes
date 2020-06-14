@@ -6,12 +6,11 @@ metadata:
     volume: db-pv
 spec:
   accessModes:
-  - ReadWriteOnce
-  - ReadOnlyMany
+  - ReadWriteMany
   storageClassName: nfs
-  persistentVolumeReclaimPolicy: Retain
+  persistentVolumeReclaimPolicy: Delete
   capacity:
-    storage: 1Gi
+    storage: 10Gi
   nfs:
     server: 161.35.63.181
     path: /share
